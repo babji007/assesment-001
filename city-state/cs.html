@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body onload="resetSelection()">
+
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">JS-Assesment 001</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="../Main/home.html">Home</a></li>
+            <li><a href="../binaryToNumber/btn.html">Assesment 1</a></li>
+            <li><a href="../city-state/cs.html">Assesment 2</a></li>
+            <li><a href="../MergeAray/marray.html">Assesment 3 & 4 </a></li>
+            <li><a href="../Numbers/num.html">Assesment 5</a></li>
+            <li><a href="../stringlength/sl.html">Assesment 6</a></li>
+          </ul>
+        </div>
+      </nav>
+<select id="countrySelect" size="1" onchange="makeSubmenu(this.value)">
+           <option value="" disabled selected>Choose State</option>
+           <option>andhra</option>
+           <option>tamilnadu</option>
+           <option>telangana</option>
+           <option>kerala</option>
+           <option>goa</option>
+</select>
+<select id="citySelect" size="1" >
+          <option value="" disabled selected>Choose City</option>
+<!-- <option>fdfd</option> -->
+</select>
+<button onclick="displaySelected()">show selected</button>
+<button onclick="resetSelection()">reset</button>
+<script src="cs.js"></script>
+</body>
+</html>
